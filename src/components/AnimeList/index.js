@@ -8,7 +8,7 @@ const AnimeList = ({ api }) => {
         <Link
           key={animeTop.mal_id}
           href={`${animeTop.mal_id}`}
-          className="cursor-pointer"
+          className="cursor-pointer text-primary hover:text-accent transition-all"
         >
           <Image
             src={animeTop.images.jpg.image_url}
@@ -18,9 +18,7 @@ const AnimeList = ({ api }) => {
             alt=""
             loading="eager"
           />
-          <h1 className="font-bold  md:text-xl text-md p-4">
-            {animeTop.title}
-          </h1>
+          <h1 className="font-bold  md:text-xl text-md p-">{animeTop.title}</h1>
         </Link>
       ))}
     </div>

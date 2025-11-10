@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+@import "tailwindcss";
+
+/* Custom theme variables */
+@theme {
+  --color-primary: #eeeeee;
+  --color-accent: #ffc639;
+  --color-secondary: #393e46;
+  --color-dark: #222831;
+
+  --font-sans: "Inter", sans-serif;
+}
+
 img {
   transition: 3s ease all;
   -webkit-transition: 3s ease all;
@@ -9,4 +21,18 @@ img {
 
 img:hover {
   scale: 102%;
+}
+.loading {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 16px solid;
+  border-color: #e4e4ed;
+  border-right-color: #ffc639;
+  animation: s2 0.5s infinite linear;
+}
+@keyframes s2 {
+  to {
+    transform: rotate(1turn);
+  }
 }
